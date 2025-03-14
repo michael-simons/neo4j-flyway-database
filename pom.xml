@@ -95,6 +95,7 @@
 		<maven.version>3.9.9</maven.version>
 		<neo4j.image>neo4j:${neo4j.version}</neo4j.image>
 		<neo4j.version>5.26.4</neo4j.version>
+		<nexus-staging-maven-plugin.version>1.7.0</nexus-staging-maven-plugin.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<skipITs>${skipTests}</skipITs>
@@ -599,6 +600,17 @@
 					<goals>deploy</goals>
 					<pushChanges>false</pushChanges>
 					<localCheckout>true</localCheckout>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.sonatype.plugins</groupId>
+				<artifactId>nexus-staging-maven-plugin</artifactId>
+				<version>${nexus-staging-maven-plugin.version}</version>
+				<extensions>true</extensions>
+				<configuration>
+					<serverId>ossrh</serverId>
+					<nexusUrl>https://oss.sonatype.org/</nexusUrl>
+					<autoReleaseAfterClose>true</autoReleaseAfterClose>
 				</configuration>
 			</plugin>
 		</plugins>
