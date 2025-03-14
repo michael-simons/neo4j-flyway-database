@@ -75,7 +75,7 @@
 		<flyway-core.version>11.3.4</flyway-core.version>
 		<git-commit-id-maven-plugin.version>9.0.1</git-commit-id-maven-plugin.version>
 		<java.version>17</java.version>
-		<junit-jupiter.version>5.12.0</junit-jupiter.version>
+		<junit-jupiter.version>5.12.1</junit-jupiter.version>
 		<license-maven-plugin.version>4.6</license-maven-plugin.version>
 		<maven-assembly-plugin.version>3.7.1</maven-assembly-plugin.version>
 		<maven-checkstyle-plugin.version>3.6.0</maven-checkstyle-plugin.version>
