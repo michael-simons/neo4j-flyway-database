@@ -60,8 +60,8 @@ class Neo4jSupportIT {
 	}
 
 	String getUrl(boolean enableSQLTranslation) {
-		return "jdbc:neo4j://localhost:%d?enableSQLTranslation=%s".formatted(this.neo4j.getMappedPort(7687),
-				enableSQLTranslation);
+		return "jdbc:neo4j://%s:%d?enableSQLTranslation=%s".formatted(this.neo4j.getHost(),
+				this.neo4j.getMappedPort(7687), enableSQLTranslation);
 	}
 
 	String getUsername() {
