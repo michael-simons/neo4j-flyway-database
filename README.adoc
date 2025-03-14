@@ -10,13 +10,15 @@ Michael Simons <michael.simons@neo4j.com>
 
 This is a plugin for https://documentation.red-gate.com/fd/[Redgate Flyway Database] migrations.
 It requires the https://github.com/neo4j/neo4j-jdbc[Neo4j JDBC Driver] 6.2 or higher.
-It does not ship the driver.
+It does not ship the driver itself and requires at least 6.2 or higher.
+This plugin does *not* work with the common Neo4j driver for Java.
+If you need something on that driver, have a look at https://github.com/michael-simons/neo4j-migrations[Neo4j-Migrations].
 
 Support is delivered on best effort basis, this module is neither an official Neo4j nor Redgate product.
 
 It creates the same database structure as https://github.com/michael-simons/neo4j-migrations[Neo4j-Migrations], and both tools should be able to read each other's data.
 
-== Which driver to use?
+== Which driver-bundle to use?
 
 We recommend the https://neo4j.com/docs/jdbc-manual/current/distribution/#_full_bundle[full-bundle].
 The Maven coordinates are: `org.neo4j:neo4j-jdbc-full-bundle`.
