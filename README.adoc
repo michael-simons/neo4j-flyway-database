@@ -1,0 +1,32 @@
+= Neo4j-Flyway-Database
+Michael Simons <michael.simons@neo4j.com>
+:doctype: article
+:lang: en
+:listing-caption: Listing
+:source-highlighter: coderay
+:icons: font
+
+== Introduction
+
+This is a plugin for https://documentation.red-gate.com/fd/[Redgate Flyway Database] migrations.
+It requires the https://github.com/neo4j/neo4j-jdbc[Neo4j JDBC Driver] 6.2 or higher.
+It does not ship the driver.
+
+Support is delivered on best effort basis, this module is neither an official Neo4j nor Redgate product.
+
+It creates the same database structure as https://github.com/michael-simons/neo4j-migrations[Neo4j-Migrations], and both tools should be able to read each other's data.
+
+== Which driver to use?
+
+We recommend the https://neo4j.com/docs/jdbc-manual/current/distribution/#_full_bundle[full-bundle].
+The Maven coordinates are: `org.neo4j:neo4j-jdbc-full-bundle`.
+
+== SQL or Cypher?
+
+The Neo4j JDBC Driver can run Cypher and SQL.
+It defaults to Cypher by default, and we recommend writing your migrations in Cypher.
+Cypher files with `.sql` extensions look odd, so you should configure Flyway to recognize `.cypher`, too.
+
+However, if you enabled SQL to Cypher translation, you can also use SQL in your migrations.
+Learn more about this in the drivers https://neo4j.com/docs/jdbc-manual/current/sql2cypher/[manual].
+The URL parameter to turn on SQL to Cypher translation is `?enableSQLTranslation=true`.
