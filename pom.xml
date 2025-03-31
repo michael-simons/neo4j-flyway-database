@@ -70,7 +70,7 @@
 	<properties>
 		<assertj.version>3.27.3</assertj.version>
 		<build-helper-maven-plugin.version>3.6.0</build-helper-maven-plugin.version>
-		<checkstyle.version>10.21.4</checkstyle.version>
+		<checkstyle.version>10.22.0</checkstyle.version>
 		<duplicate-finder-maven-plugin.version>2.0.1</duplicate-finder-maven-plugin.version>
 		<flyway-core.version>11.4.1</flyway-core.version>
 		<git-commit-id-maven-plugin.version>9.0.1</git-commit-id-maven-plugin.version>
