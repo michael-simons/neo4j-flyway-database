@@ -73,7 +73,7 @@
 		<central-publishing-maven-plugin.version>0.7.0</central-publishing-maven-plugin.version>
 		<checkstyle.version>10.21.4</checkstyle.version>
 		<duplicate-finder-maven-plugin.version>2.0.1</duplicate-finder-maven-plugin.version>
-		<flyway-core.version>11.6.0</flyway-core.version>
+		<flyway-core.version>11.8.0</flyway-core.version>
 		<git-commit-id-maven-plugin.version>9.0.1</git-commit-id-maven-plugin.version>
 		<java.version>17</java.version>
 		<junit-jupiter.version>5.12.1</junit-jupiter.version>
