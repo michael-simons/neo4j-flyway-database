@@ -71,7 +71,7 @@
 		<assertj.version>3.27.3</assertj.version>
 		<build-helper-maven-plugin.version>3.6.0</build-helper-maven-plugin.version>
 		<central-publishing-maven-plugin.version>0.7.0</central-publishing-maven-plugin.version>
-		<checkstyle.version>10.24.0</checkstyle.version>
+		<checkstyle.version>10.25.0</checkstyle.version>
 		<duplicate-finder-maven-plugin.version>2.0.1</duplicate-finder-maven-plugin.version>
 		<flyway-core.version>11.8.2</flyway-core.version>
 		<git-commit-id-maven-plugin.version>9.0.1</git-commit-id-maven-plugin.version>
