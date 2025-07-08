@@ -372,7 +372,7 @@
 					<artifactId>maven-surefire-plugin</artifactId>
 					<version>${maven-surefire-plugin.version}</version>
 					<configuration>
-						<argLine>@{argLine} -Xverify:all</argLine>
+						<argLine>-Xverify:all</argLine>
 						<skipTests>${skipUTs}</skipTests>
 						<systemPropertyVariables>
 							<neo4j-jdbc.default-neo4j-image>${neo4j.image}</neo4j-jdbc.default-neo4j-image>
