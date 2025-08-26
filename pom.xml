@@ -107,6 +107,7 @@
 		<sortpom-maven-plugin.version>4.0.0</sortpom-maven-plugin.version>
 		<spring-javaformat.version>0.0.47</spring-javaformat.version>
 		<testcontainers.version>1.21.3</testcontainers.version>
+		<versions-maven-plugin.version>2.18.0</versions-maven-plugin.version>
 	</properties>
 
 	<dependencyManagement>
@@ -469,6 +470,34 @@
 					<configuration>
 						<generateGitPropertiesFile>false</generateGitPropertiesFile>
 						<commitIdGenerationMode>full</commitIdGenerationMode>
+					</configuration>
+				</plugin>
+				<plugin>
+					<!--
+					 Update all dependencies with:
+					 ```
+					  ./mvnw versions:update-properties
+					 ```
+					 All snapshots, alpha. beta, release and other candidates have been excluded.
+					 Some dependencies have been excluded from automatic updates all together ($reasons, you know…)
+					 -->
+					<groupId>org.codehaus.mojo</groupId>
+					<artifactId>versions-maven-plugin</artifactId>
+					<version>${versions-maven-plugin.version}</version>
+					<configuration>
+						<generateBackupPoms>false</generateBackupPoms>
+						<ruleSet>
+							<ignoreVersions>
+								<ignoreVersion>
+									<type>regex</type>
+									<version>(?i)(.+-SNAPSHOT|.+-M\d|.+-?RC\d|.+CR\d)</version>
+								</ignoreVersion>
+								<ignoreVersion>
+									<type>regex</type>
+									<version>(?i).+-?(alpha|beta).+</version>
+								</ignoreVersion>
+							</ignoreVersions>
+						</ruleSet>
 					</configuration>
 				</plugin>
 			</plugins>
