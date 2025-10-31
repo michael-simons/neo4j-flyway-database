@@ -71,11 +71,11 @@
 		<assertj.version>3.27.6</assertj.version>
 		<build-helper-maven-plugin.version>3.6.0</build-helper-maven-plugin.version>
 		<central-publishing-maven-plugin.version>0.9.0</central-publishing-maven-plugin.version>
-		<checkstyle.version>11.1.0</checkstyle.version>
+		<checkstyle.version>12.1.1</checkstyle.version>
 		<duplicate-finder-maven-plugin.version>2.0.1</duplicate-finder-maven-plugin.version>
-		<flyway-core.version>11.13.2</flyway-core.version>
+		<flyway-core.version>11.15.0</flyway-core.version>
 		<git-commit-id-maven-plugin.version>9.0.2</git-commit-id-maven-plugin.version>
-		<jackson.version>2.20.0</jackson.version>
+		<jackson.version>2.20.1</jackson.version>
 		<java.version>17</java.version>
 		<junit-jupiter.version>6.0.0</junit-jupiter.version>
 		<license-maven-plugin.version>5.0.0</license-maven-plugin.version>
@@ -83,7 +83,7 @@
 		<maven-checkstyle-plugin.version>3.6.0</maven-checkstyle-plugin.version>
 		<maven-compiler-plugin.version>3.14.1</maven-compiler-plugin.version>
 		<maven-deploy-plugin.version>3.1.4</maven-deploy-plugin.version>
-		<maven-enforcer-plugin.version>3.6.1</maven-enforcer-plugin.version>
+		<maven-enforcer-plugin.version>3.6.2</maven-enforcer-plugin.version>
 		<maven-failsafe-plugin.version>3.5.4</maven-failsafe-plugin.version>
 		<maven-install-plugin.version>3.1.4</maven-install-plugin.version>
 		<maven-jar-plugin.version>3.4.2</maven-jar-plugin.version>
@@ -95,7 +95,7 @@
 		<maven-surefire-plugin.version>3.5.4</maven-surefire-plugin.version>
 		<maven.compiler.release>${java.version}</maven.compiler.release>
 		<maven.version>3.9.9</maven.version>
-		<neo4j-jdbc.version>6.8.0</neo4j-jdbc.version>
+		<neo4j-jdbc.version>6.9.1</neo4j-jdbc.version>
 		<neo4j.image>neo4j:${neo4j.version}</neo4j.image>
 		<neo4j.version>5.26.4</neo4j.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -106,7 +106,7 @@
 		<slf4j.version>2.0.17</slf4j.version>
 		<sortpom-maven-plugin.version>4.0.0</sortpom-maven-plugin.version>
 		<spring-javaformat.version>0.0.47</spring-javaformat.version>
-		<testcontainers.version>1.21.3</testcontainers.version>
+		<testcontainers.version>2.0.1</testcontainers.version>
 		<versions-maven-plugin.version>2.19.1</versions-maven-plugin.version>
 	</properties>
 
@@ -193,12 +193,12 @@
 		</dependency>
 		<dependency>
 			<groupId>org.testcontainers</groupId>
-			<artifactId>junit-jupiter</artifactId>
+			<artifactId>testcontainers-junit-jupiter</artifactId>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.testcontainers</groupId>
-			<artifactId>neo4j</artifactId>
+			<artifactId>testcontainers-neo4j</artifactId>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
