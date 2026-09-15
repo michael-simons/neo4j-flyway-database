@@ -24,6 +24,7 @@ import org.flywaydb.core.internal.exception.FlywayMigrateException;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.TestInstance;
+import org.junit.jupiter.api.TestInstance.Lifecycle;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 import org.testcontainers.junit.jupiter.Testcontainers;
@@ -34,7 +35,7 @@ import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
 
 @SuppressWarnings("SqlNoDataSourceInspection")
 @Testcontainers(disabledWithoutDocker = true)
-@TestInstance(TestInstance.Lifecycle.PER_CLASS)
+@TestInstance(Lifecycle.PER_CLASS)
 class Neo4jSupportIT {
 
 	@SuppressWarnings("resource") // On purpose to reuse this
